@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Require the peer dependencies of pose-detection. -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+
+    <!-- You must explicitly require a TF.js backend if you're not using the TF.js union bundle. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+
+    <title>A Webcam Test App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Look at the Console for the Result</h1>
+    <video id="local_video" width="800" height="600" autoplay playsinline loop></video>
+    <!-- <img src="./img/pserson.png" id="person_image" /> -->
+    <button id="snap" style="padding:10px; background-color: orange; color:white; text-decoration: none; ">Snap</button>
+    <canvas id="local_canvas" width="800" height="600"></canvas>
+    <canvas id="output_canvas" width="800" height="600"></canvas>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
