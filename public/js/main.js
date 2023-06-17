@@ -3,7 +3,7 @@ import { detectHands } from './mediapipeHands.js';
 
 
 const defaultConstraints = {
-    audio: true,
+    audio: false,
     video: true,
 };
 
